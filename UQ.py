@@ -25,5 +25,6 @@ for k in range(n):
 
 plt.subplot(1,2,2)
 plt.imshow(im2, cmap = 'gray')
+im2=cv2.normalize(im2, None, 0, 255, cv2.NORM_MINMAX, cv2.CV_8U)
 #output
 cv2.imwrite('newborn2.tif',im2)
