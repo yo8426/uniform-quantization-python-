@@ -20,7 +20,7 @@ for k in range(n):
     
     for i in range(im1.shape[0]):
         for j in range(im1.shape[1]):
-            if im1[i,j]<level2 and im1[i,j]>=level1:
+            if im1[i,j]<=level2 and im1[i,j]>=level1-1:
                 im2[i,j]=level1
 
 plt.subplot(1,2,2)
